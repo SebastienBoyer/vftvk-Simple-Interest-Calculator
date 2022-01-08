@@ -12,6 +12,7 @@ function compute()
         {'text': 'in the year ','val':parseInt(year)}
         
        ]
+    
     listhtml = document.getElementById("result")
     for(var ctr = 0; ctr < 4; ctr++)
         {
@@ -24,4 +25,15 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
+}
+
+function validate() 
+{
+    var prin = document.getElementById("principal").value;
+    if (prin<=0){
+                    alert('Enter a positive number');
+                    document.getElementById("principal").focus();
+                }
+    
+    
 }
