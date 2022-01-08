@@ -32,7 +32,9 @@ function validate()
     var prin = document.getElementById("principal").value;
     if (prin<=0){
                     alert('Enter a positive number');
+                    document.getElementById("principal").value="";
                     document.getElementById("principal").focus();
+                    return false;
                 }
     
     
